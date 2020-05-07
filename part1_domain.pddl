@@ -10,8 +10,8 @@
         (move ?from ?to - cell)
         (at ?pos - cell)
         (connected ?start ?end - cell)
-        (has_ghost ?pos - cell)
-        (has_food ?pos -cell)
+        (has-ghost ?pos - cell)
+        (has-food ?pos -cell)
     )
 
     (:action move
@@ -19,12 +19,12 @@
         :precondition (and
             (at ?from)
             (connected ?from ?to)
-            (not (has_ghost ?to))
+            (not (has-ghost ?to))
         )
         :effect (and
             (at ?to)
             (not (at ?from))
-            (not (has_food ?to))
+            (not (has-food ?to))
         )
     )
 )

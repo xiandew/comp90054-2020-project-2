@@ -19,8 +19,8 @@
 	
 	(:init
         (at a1)
-        (has_ghost a2)
-        (has_food a3)
+        (has-ghost a2)
+        (has-food a3)
         (connected a1 a2)
         (connected a1 b1)
         (connected a2 a1)
@@ -39,12 +39,12 @@
 
     (:goal
         (and
-            (not (has_food a1))
-            (not (has_food a2))
-            (not (has_food a3))
-            (not (has_food b1))
-            (not (has_food b2))
-            (not (has_food b3))
+            (not (has-food a1))
+            (not (has-food a2))
+            (not (has-food a3))
+            (not (has-food b1))
+            (not (has-food b2))
+            (not (has-food b3))
         )
 	)
 )
