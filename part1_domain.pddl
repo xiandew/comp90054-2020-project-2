@@ -12,9 +12,7 @@
         (connected ?start ?end - cell)
         (has_ghost ?pos - cell)
         (has_food ?pos -cell)
-        (empty ?pos - cell)
     )
-
 
     (:action move
         :parameters (?from ?to - cell)
